@@ -29,6 +29,22 @@ export default function Blog() {
             "Third update point - Impedit quo eveniet tenetur temporibus",
           ]}
         />
+        <BlogContent
+          title="Update 1.0 - Initial Release"
+          points={[
+            "First update point - Lorem ipsum dolor sit amet consectetur",
+            "Second update point - Vitae culpa voluptates laborum qui reiciendis",
+            "Third update point - Impedit quo eveniet tenetur temporibus",
+          ]}
+        />
+        <BlogContent
+          title="Update 1.0 - Initial Release"
+          points={[
+            "First update point - Lorem ipsum dolor sit amet consectetur",
+            "Second update point - Vitae culpa voluptates laborum qui reiciendis",
+            "Third update point - Impedit quo eveniet tenetur temporibus",
+          ]}
+        />
 
         <BlogContent
           title="Update 1.1 - Bug Fixes"
