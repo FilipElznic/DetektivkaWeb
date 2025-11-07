@@ -7,7 +7,7 @@ import Explore from "../Components/Explore.jsx";
 
 export default function Home() {
   return (
-    <div>
+    <div className="bg-black">
       <LandingPage />
       <div className="h-full w-full bg-gradient-to-b from-zinc-700 via-zinc-800 to-black">
         <Intro />
