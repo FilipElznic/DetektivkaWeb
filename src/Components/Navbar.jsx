@@ -14,7 +14,7 @@ export default function Navbar() {
           {/* Home button on the left */}
           <a
             href="#home"
-            className="relative px-12 py-5 bg-gray-200 border-[2px] border-black text-gray-900 font-mono text-xl tracking-wide hover:bg-gray-300 transition-colors"
+            className="relative px-12 py-5 bg-gray-200 border-[2px] border-black text-gray-900 font-pixel text-xl tracking-wide hover:bg-gray-300 transition-colors"
           >
             {/* Top-left corner */}
             <span className="absolute -top-2 -left-2 w-4 h-4 border-l-4 border-t-4 border-white"></span>
@@ -33,7 +33,7 @@ export default function Navbar() {
               <a
                 key={index}
                 href={item.href}
-                className="relative px-12 py-5 bg-gray-200 border-[2px] border-black text-gray-900 font-mono text-xl tracking-wide hover:bg-gray-300 transition-colors"
+                className="relative px-12 py-5 bg-gray-200 border-[2px] border-black text-gray-900 font-pixel text-xl tracking-wide hover:bg-gray-300 transition-colors"
               >
                 {/* Top-left corner */}
                 <span className="absolute -top-2 -left-2 w-4 h-4 border-l-4 border-t-4 border-white"></span>

@@ -1,19 +1,18 @@
 import React from "react";
-import Navbar from "../Components/Navbar.jsx";
+import LandingPage from "../Components/LandingPage.jsx";
+import Intro from "../Components/Intro.jsx";
+import Mission from "../Components/Mission.jsx";
+import Footer from "../Components/Footer.jsx";
 
 export default function Home() {
   return (
-    <div
-      className="min-h-screen bg-cover bg-center bg-fixed"
-      style={{
-        backgroundImage: 'url("/bg.webp")',
-      }}
-    >
-      <div className="min-h-screen bg-black bg-opacity-50">
-        {" "}
-        {/* Dark overlay */}
-        <Navbar />
+    <div>
+      <LandingPage />
+      <div className="h-full w-full bg-gradient-to-b from-zinc-800 to-zinc-900">
+        <Intro />
+        <Mission />
       </div>
+      <Footer />
     </div>
   );
 }

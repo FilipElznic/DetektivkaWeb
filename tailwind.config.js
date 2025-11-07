@@ -6,6 +6,9 @@ export default {
       dropShadow: {
         "white-glow": "0px 0px 8px white",
       },
+      fontFamily: {
+        pixel: ["Pixelify Sans", "system-ui", "sans-serif"],
+      },
     },
   },
   plugins: [],
