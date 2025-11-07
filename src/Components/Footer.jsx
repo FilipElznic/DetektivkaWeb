@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <footer className="h-[35vh] bg-zinc-950 flex flex-col  items-center text-white gap-5 relative">
+    <footer className="h-[35vh]  flex flex-col  items-center text-white gap-5 relative  bg-gradient-to-b from-black  to-zinc-700">
       <div className="absolute bottom-5 left-10  bg-white">
         <img src="/logo.png" alt="Logo" className="w-16 h-16" />
       </div>
@@ -62,7 +62,7 @@ function Footer() {
             ochrana údajů
           </a>
         </span>
-        &copy; {new Date().getFullYear()} 2025 SPSUL všechna práva vyhrazena.
+        @ {new Date().getFullYear()} SPSUL všechna práva vyhrazena.
       </div>
     </footer>
   );

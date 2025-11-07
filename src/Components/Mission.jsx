@@ -8,6 +8,12 @@ function Mission() {
         libero aut voluptate, accusamus fugiat, tenetur ipsam adipisci sint
         necessitatibus?
       </p>
+      <div className="h-[70vh] bg-transparent w-full">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis non
+        aliquam, expedita porro voluptas eos optio exercitationem harum beatae.
+        Deleniti, quisquam. Non nisi officiis modi odit similique recusandae
+        assumenda voluptatibus?
+      </div>
     </div>
   );
 }
