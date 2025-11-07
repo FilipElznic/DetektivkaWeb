@@ -9,13 +9,12 @@ function Explore() {
       />
       <div className="min-h-[80vh] md:min-h-screen flex flex-col container mx-auto text-white z-20 relative px-4 py-8 md:py-0">
         <h1 className="text-4xl md:text-6xl lg:text-9xl py-4 md:py-6">
-          Explore the unexplored
+          Prozkoumejte neprozkoumaný svět
         </h1>
         <p className="w-full md:w-2/3 lg:w-1/2 text-base md:text-lg lg:text-xl text-start text-gray-400">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae in
-          voluptates saepe magnam culpa! Velit a laudantium laborum earum maxime
-          libero aut voluptate, accusamus fugiat, tenetur ipsam adipisci sint
-          necessitatibus?
+          Vstupte do tajemného světa plného nečekaných objevů a skrytých
+          tajemství. Každý krok vás přiblíží k odhalení pravdy. Jste připraveni
+          na dobrodružství?
         </p>
         <a
           href="#home"

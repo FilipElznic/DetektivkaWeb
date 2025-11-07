@@ -4,12 +4,10 @@ function Intro() {
   return (
     <div className="min-h-screen text-white p-4 md:p-8 py-8 md:py-0">
       <div className="container mx-auto  ">
-        <h2 className="text-4xl md:text-6xl lg:text-9xl">Intro</h2>
+        <h2 className="text-4xl md:text-6xl lg:text-9xl">Úvod</h2>
         <p className="w-full md:w-2/3 lg:w-1/2 my-6 md:my-8 text-base md:text-lg lg:text-xl text-gray-300">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur qui
-          vitae culpa voluptates laborum! Qui reiciendis, impedit quo eveniet
-          tenetur temporibus, doloribus placeat vero consequuntur consequatur
-          nisi, accusantium expedita iste.
+          Ponořte se do světa napínavé detektivky, kde každý detail má význam.
+          Objevujte stopy, rozluštěte záhady a staňte se mistrem dedukce.
         </p>
       </div>
       <PixelatedBoxes />

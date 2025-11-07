@@ -15,9 +15,8 @@ function LandingPage() {
             Detektivka
           </h1>
           <p className="text-base md:text-xl lg:text-2xl font-pixel mb-12 w-full md:w-2/3 lg:w-1/3 text-gray-300">
-            king it over 2000 years old. Richard McClintock, a Latin professor
-            at Hampden-Sydney College in Virginia, looked up one of the more
-            obscure Latin words,
+            Tajemná detektivní hra plná záhad a dobrodružství. Vydejte se na
+            cestu plnou nečekaných zvratů a odhalte pravdu.
           </p>
           <a
             href="#about"

@@ -11,20 +11,18 @@ export default function Github() {
       <div className="flex-grow flex items-center justify-center">
         <div className="container mx-auto px-4 py-20 text-white">
           <h1 className="text-4xl md:text-6xl lg:text-8xl font-pixel mb-6 text-center">
-            GitHub Repository
+            GitHub Repozitář
           </h1>
           <p className="text-base md:text-xl lg:text-2xl font-pixel mb-8 text-center text-gray-300">
-            Check out our project on GitHub
+            Tento repozitář je v současné době soukromý
           </p>
           <div className="text-center">
-            <a
-              href="https://github.com/FilipElznic/DetektivkaWeb"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block px-6 py-3 md:px-8 md:py-4 bg-gray-200 border-[2px] border-black text-gray-900 font-pixel text-base md:text-xl tracking-wide hover:bg-gray-300 transition-colors"
+            <button
+              disabled
+              className="inline-block px-6 py-3 md:px-8 md:py-4 bg-gray-500 border-[2px] border-black text-gray-300 font-pixel text-base md:text-xl tracking-wide cursor-not-allowed opacity-75"
             >
-              Visit Repository
-            </a>
+              🔒 Repozitář uzamčen
+            </button>
           </div>
         </div>
       </div>

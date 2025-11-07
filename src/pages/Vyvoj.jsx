@@ -13,9 +13,6 @@ export default function Vyvoj() {
           <h1 className="text-4xl md:text-6xl lg:text-8xl font-pixel mb-6 text-center">
             Vývoj hry
           </h1>
-          <p className="text-base md:text-xl lg:text-2xl font-pixel text-center text-gray-300">
-            Game development content coming soon...
-          </p>
         </div>
       </div>
 
