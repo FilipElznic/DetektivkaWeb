@@ -5,11 +5,18 @@ function Mission() {
         Vaše mise
       </h1>
       <p className="w-full md:w-2/3 lg:w-1/2 text-base md:text-lg lg:text-xl text-center text-gray-400">
-        Čeká vás napínavé dobrodružství plné tajemství a záhad. Použijte svůj
-        důvtip a analytické schopnosti k vyřešení případu. Každé rozhodnutí může
-        změnit průběh hry.
+        Světoznámý Louvre se stal místem činu. Vzácné artefakty zmizely a
+        policie je bezradná. Vžijte se do role detektiva, prozkoumejte sály
+        muzea, zajistěte důkazy a odhalte identitu zloděje dříve, než zmizí
+        navždy.
       </p>
-      <div className="h-[50vh] md:h-[70vh] bg-transparent w-full">Lo</div>
+      <div className="h-[50vh] md:h-[70vh] bg-transparent w-full flex items-center justify-center">
+        <img
+          src="/image03.png"
+          alt="mission"
+          className="h-full object-contain"
+        />
+      </div>
     </div>
   );
 }

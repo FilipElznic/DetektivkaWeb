@@ -9,6 +9,8 @@ import Github from "./pages/Github";
 import Cookies from "./pages/Cookies";
 import Podminky from "./pages/Podminky";
 import OchranaUdaju from "./pages/OchranaUdaju";
+import Secret from "./pages/Secret";
+import NotFound from "./pages/NotFound";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 
@@ -76,6 +78,22 @@ function App() {
               element={
                 <div className="page-transition">
                   <OchranaUdaju />
+                </div>
+              }
+            />
+            <Route
+              path="/secret"
+              element={
+                <div className="page-transition">
+                  <Secret />
+                </div>
+              }
+            />
+            <Route
+              path="*"
+              element={
+                <div className="page-transition">
+                  <NotFound />
                 </div>
               }
             />
