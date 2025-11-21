@@ -29,7 +29,7 @@ export default function Navbar() {
             <span className="absolute -bottom-2 -left-2 w-4 h-4 border-l-4 border-b-4 border-white"></span>
             {/* Bottom-right corner */}
             <span className="absolute -bottom-2 -right-2 w-4 h-4 border-r-4 border-b-4 border-white"></span>
-            Domu
+            Domů
           </Link>
 
           {/* Burger menu button for mobile and tablet */}

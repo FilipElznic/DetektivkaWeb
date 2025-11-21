@@ -6,18 +6,34 @@ import Blog from "./pages/Blog";
 import Vyvoj from "./pages/Vyvoj";
 import ONas from "./pages/ONas";
 import Github from "./pages/Github";
+import Cookies from "./pages/Cookies";
+import Podminky from "./pages/Podminky";
+import OchranaUdaju from "./pages/OchranaUdaju";
+import Navbar from "./Components/Navbar";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
     <Router>
-      <Routes>
-        {/* Home / Landing page */}
-        <Route path="/" element={<Home />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/vyvoj" element={<Vyvoj />} />
-        <Route path="/onas" element={<ONas />} />
-        <Route path="/github" element={<Github />} />
-      </Routes>
+      <div className="relative min-h-screen flex flex-col">
+        <div className="absolute top-0 left-0 w-full z-50">
+          <Navbar />
+        </div>
+        <main className="flex-grow">
+          <Routes>
+            {/* Home / Landing page */}
+            <Route path="/" element={<Home />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/vyvoj" element={<Vyvoj />} />
+            <Route path="/onas" element={<ONas />} />
+            <Route path="/github" element={<Github />} />
+            <Route path="/cookies" element={<Cookies />} />
+            <Route path="/podminky" element={<Podminky />} />
+            <Route path="/ochrana-udaju" element={<OchranaUdaju />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
     </Router>
   );
 }

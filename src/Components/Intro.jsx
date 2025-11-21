@@ -2,7 +2,7 @@ import PixelatedBoxes from "./PixelatedBoxes";
 
 function Intro() {
   return (
-    <div className="min-h-screen text-white p-4 md:p-8 py-8 md:py-0">
+    <div className="min-h-screen bg-gradient-to-b from-black/50 to-black text-white p-4 md:p-8 py-8 md:py-0">
       <div className="container mx-auto  ">
         <h2 className="text-4xl md:text-6xl lg:text-9xl">Úvod</h2>
         <p className="w-full md:w-2/3 lg:w-1/2 my-6 md:my-8 text-base md:text-lg lg:text-xl text-gray-300">

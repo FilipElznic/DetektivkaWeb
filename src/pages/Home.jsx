@@ -2,20 +2,27 @@ import React from "react";
 import LandingPage from "../Components/LandingPage.jsx";
 import Intro from "../Components/Intro.jsx";
 import Mission from "../Components/Mission.jsx";
-import Footer from "../Components/Footer.jsx";
 import Explore from "../Components/Explore.jsx";
 
 export default function Home() {
   return (
-    <div className="bg-black">
-      <LandingPage />
-      <div className="h-full w-full bg-gradient-to-b from-zinc-700 via-zinc-800 to-black">
+    <div className="bg-black relative">
+      <div
+        className="fixed inset-0 z-0"
+        style={{
+          backgroundImage: 'url("/bg.webp")',
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      ></div>
+      <div className="relative z-10">
+        <LandingPage />
+
         <Intro />
         <Mission />
-      </div>
 
-      <Explore />
-      <Footer />
+        <Explore />
+      </div>
     </div>
   );
 }

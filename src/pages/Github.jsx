@@ -1,14 +1,7 @@
-import Navbar from "../Components/Navbar.jsx";
-import Footer from "../Components/Footer.jsx";
-
 export default function Github() {
   return (
-    <div className="bg-black min-h-screen flex flex-col">
-      <div className="bg-black bg-opacity-50">
-        <Navbar />
-      </div>
-
-      <div className="flex-grow flex items-center justify-center">
+    <div className="bg-black min-h-screen flex flex-col pt-24">
+      <div className="flex-grow h-screen flex items-center justify-center">
         <div className="container mx-auto px-4 py-20 text-white">
           <h1 className="text-4xl md:text-6xl lg:text-8xl font-pixel mb-6 text-center">
             GitHub Repozitář
@@ -26,8 +19,6 @@ export default function Github() {
           </div>
         </div>
       </div>
-
-      <Footer />
     </div>
   );
 }

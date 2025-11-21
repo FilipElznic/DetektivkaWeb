@@ -1,20 +1,13 @@
-import Navbar from "../Components/Navbar.jsx";
-import Footer from "../Components/Footer.jsx";
-
 export default function Blog() {
   return (
-    <div className="bg-black min-h-screen flex flex-col">
-      <div className="bg-black bg-opacity-50">
-        <Navbar />
-      </div>
+    <div className="bg-black min-h-screen flex flex-col pt-24">
       <div className="flex items-center justify-center">
         <div className="container mx-auto px-4 pt-20 text-white">
           <h1 className="text-4xl md:text-6xl lg:text-8xl font-pixel mb-6 text-center">
             Blog
           </h1>
-          <p className="text-base md:text-xl lg:text-2xl font-pixel text-center text-gray-300">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, fuga
-            et? Modi accusantium
+          <p className="text-base md:text-xl lg:text-2xl font-pixel text-center text-gray-300 w-1/2 mx-auto mb-12">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
           </p>
         </div>
       </div>
@@ -22,41 +15,35 @@ export default function Blog() {
       {/* Blog updates */}
       <div className="container mx-auto px-4 pb-20 ">
         <BlogContent
-          title="Update 1.0 - Initial Release"
+          title="12.9. - Zahájení projektu a první kroky"
           points={[
-            "First update point - Lorem ipsum dolor sit amet consectetur",
-            "Second update point - Vitae culpa voluptates laborum qui reiciendis",
-            "Third update point - Impedit quo eveniet tenetur temporibus",
-          ]}
-        />
-        <BlogContent
-          title="Update 1.0 - Initial Release"
-          points={[
-            "First update point - Lorem ipsum dolor sit amet consectetur",
-            "Second update point - Vitae culpa voluptates laborum qui reiciendis",
-            "Third update point - Impedit quo eveniet tenetur temporibus",
-          ]}
-        />
-        <BlogContent
-          title="Update 1.0 - Initial Release"
-          points={[
-            "First update point - Lorem ipsum dolor sit amet consectetur",
-            "Second update point - Vitae culpa voluptates laborum qui reiciendis",
-            "Third update point - Impedit quo eveniet tenetur temporibus",
+            "Start projektu: Založení GitHub repozitáře a příprava Figma projektu pro UI modely.",
+            "Core mechaniky: LB začal pracovat na základních skriptech pro běh hry.",
+            "Movement: MČ a LB společně implementovali první verzi pohybu postavy.",
+            "Design: Návrh Landing page a první koncepty vizuálu.",
           ]}
         />
 
         <BlogContent
-          title="Update 1.1 - Bug Fixes"
+          title="7.11. - Styl 'Louvre', Inventář a Zvuky"
           points={[
-            "Fixed navigation issues on mobile devices",
-            "Improved performance and loading times",
-            "Added new features based on user feedback",
+            "Web Design: Kompletní předělání vizuálu webu – transformace detektivky do stylu 'Louvre'.",
+            "Interakce: MČ dokončil mechaniky pro používání a sbírání itemů.",
+            "Systémy: ŠR naimplementoval Inventář a společně s MČ rozjeli Dialogový systém.",
+            "Audio: LK se pustil do tvorby a integrace zvuků do hry.",
+          ]}
+        />
+
+        <BlogContent
+          title="21.11. - Příběh, Questy a Programování webu"
+          points={[
+            "Storytelling: Dnes jsme se zaměřili na hloubku příběhu a narativní design hry.",
+            "Gameplay: LB pracuje na Quest systému a nápovědě pro hráče, MČ řeší přepínání scén.",
+            "Web Development: Začalo ostré programování webu. Máme hotový hosting, navbar a footer.",
+            "UI/UX: Finalizace designu ostatních stránek webu a ladění základních komponent.",
           ]}
         />
       </div>
-
-      <Footer />
     </div>
   );
 }

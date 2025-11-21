@@ -1,6 +1,6 @@
 function Mission() {
   return (
-    <div className="min-h-screen flex flex-col items-center text-white px-4">
+    <div className="min-h-screen bg-black flex flex-col items-center text-white px-4">
       <h1 className="text-4xl md:text-6xl lg:text-9xl py-4 md:py-6">
         Vaše mise
       </h1>

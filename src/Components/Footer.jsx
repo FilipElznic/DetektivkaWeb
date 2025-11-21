@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Footer() {
   return (
     <footer className="min-h-[35vh] flex flex-col items-center text-white gap-3 md:gap-5 relative bg-gradient-to-b from-black to-zinc-700 px-4 py-6">
@@ -16,30 +18,32 @@ function Footer() {
       <nav className="mt-3 md:mt-6">
         <ul className="flex flex-wrap justify-center gap-3 md:gap-6 lg:gap-8 text-white font-pixel text-base md:text-2xl lg:text-4xl">
           <li>
-            <a href="#home" className="hover:text-gray-300 transition-colors">
+            <Link to="/" className="hover:text-gray-300 transition-colors">
               Domů
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#creators"
+            <Link to="/blog" className="hover:text-gray-300 transition-colors">
+              Blog
+            </Link>
+          </li>
+          <li>
+            <Link to="/vyvoj" className="hover:text-gray-300 transition-colors">
+              Vývoj hry
+            </Link>
+          </li>
+          <li>
+            <Link to="/onas" className="hover:text-gray-300 transition-colors">
+              O nás
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/github"
               className="hover:text-gray-300 transition-colors"
             >
-              Vývojáři
-            </a>
-          </li>
-          <li>
-            <a href="#about" className="hover:text-gray-300 transition-colors">
-              O hře
-            </a>
-          </li>
-          <li>
-            <a
-              href="#project"
-              className="hover:text-gray-300 transition-colors"
-            >
-              O projektu
-            </a>
+              GitHub
+            </Link>
           </li>
         </ul>
       </nav>
@@ -50,17 +54,23 @@ function Footer() {
       {/* Legal links */}
       <div className="text-white font-pixel text-sm md:text-xl lg:text-2xl flex flex-col text-center mb-6 md:mb-8 gap-2 md:gap-4">
         <span className="flex flex-wrap justify-center gap-2">
-          <a href="#cookies" className="hover:text-gray-300 transition-colors">
+          <Link to="/cookies" className="hover:text-gray-300 transition-colors">
             Cookies
-          </a>
+          </Link>
           <span className="mx-1 md:mx-2">|</span>
-          <a href="#terms" className="hover:text-gray-300 transition-colors">
+          <Link
+            to="/podminky"
+            className="hover:text-gray-300 transition-colors"
+          >
             podmínky
-          </a>
+          </Link>
           <span className="mx-1 md:mx-2">|</span>
-          <a href="#privacy" className="hover:text-gray-300 transition-colors">
+          <Link
+            to="/ochrana-udaju"
+            className="hover:text-gray-300 transition-colors"
+          >
             ochrana údajů
-          </a>
+          </Link>
         </span>
         @ {new Date().getFullYear()} SPSUL všechna práva vyhrazena.
       </div>

@@ -1,6 +1,3 @@
-import Navbar from "../Components/Navbar.jsx";
-import Footer from "../Components/Footer.jsx";
-
 export default function ONas() {
   const teamMembers = [
     {
@@ -42,15 +39,11 @@ export default function ONas() {
   ];
 
   return (
-    <div className="bg-black min-h-screen flex flex-col">
-      <div className="bg-black bg-opacity-50">
-        <Navbar />
-      </div>
-
+    <div className="bg-black min-h-screen flex flex-col pt-24">
       <div className="flex-grow">
         <div className="container mx-auto px-4 py-20 text-white">
           <h1 className="text-4xl md:text-6xl lg:text-8xl font-pixel mb-6 text-center">
-            O nás
+            Vývojáři
           </h1>
           <p className="text-base md:text-xl lg:text-2xl font-pixel text-center text-gray-300 mb-12">
             Poznejte náš tým
@@ -59,10 +52,7 @@ export default function ONas() {
           {/* Team Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 lg:gap-16 max-w-7xl mx-auto">
             {teamMembers.map((item) => (
-              <div
-                key={item.id}
-                className="relative border-2 md:border-4 border-white flex justify-center"
-              >
+              <div key={item.id} className="relative  flex justify-center">
                 {/* Pixelated border frame */}
                 <div className="relative w-48 h-48 md:w-72 md:h-72 lg:w-96 lg:h-96">
                   {/* Corner pieces - top left */}
@@ -90,8 +80,6 @@ export default function ONas() {
           </div>
         </div>
       </div>
-
-      <Footer />
     </div>
   );
 }
