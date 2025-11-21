@@ -1,68 +1,48 @@
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { Link } from "react-router-dom";
+import NavButton from "./NavButton";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const navItems = [
-    { label: "Domů", href: "/" },
-    { label: "Blog", href: "/blog" },
-    { label: "Vývoj hry", href: "/vyvoj" },
-    { label: "O nás", href: "/onas" },
-    { label: "GitHub repo", href: "/github" },
-  ];
+  const navItems = useMemo(
+    () => [
+      { label: "Domů", href: "/" },
+      { label: "Blog", href: "/blog" },
+      { label: "V\u00fdvoj hry", href: "/vyvoj" },
+      { label: "O n\u00e1s", href: "/onas" },
+      { label: "GitHub repo", href: "/github" },
+    ],
+    []
+  );
 
   return (
     <nav className="w-full py-4 md:py-8">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
           {/* Home button on the left */}
-          <Link
-            to="/"
-            className="relative px-6 py-3 md:px-12 md:py-5 bg-gray-200 border-[2px] border-black text-gray-900 font-pixel text-sm md:text-xl tracking-wide hover:bg-gray-300 transition-colors"
-          >
-            {/* Top-left corner */}
-            <span className="absolute -top-2 -left-2 w-4 h-4 border-l-4 border-t-4 border-white"></span>
-            {/* Top-right corner */}
-            <span className="absolute -top-2 -right-2 w-4 h-4 border-r-4 border-t-4 border-white"></span>
-            {/* Bottom-left corner */}
-            <span className="absolute -bottom-2 -left-2 w-4 h-4 border-l-4 border-b-4 border-white"></span>
-            {/* Bottom-right corner */}
-            <span className="absolute -bottom-2 -right-2 w-4 h-4 border-r-4 border-b-4 border-white"></span>
-            Domů
+          <Link to="/">
+            <NavButton className="text-sm md:text-xl md:px-12 md:py-5 tracking-wide">
+              Domů
+            </NavButton>
           </Link>
 
           {/* Burger menu button for mobile and tablet */}
-          <button
+          <NavButton
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="lg:hidden relative px-4 py-3 bg-gray-200 border-[2px] border-black text-gray-900 font-pixel text-xl hover:bg-gray-300 transition-colors z-50"
+            className="lg:hidden px-4 py-3 text-xl z-50"
             aria-label="Toggle menu"
           >
-            <span className="absolute -top-2 -left-2 w-4 h-4 border-l-4 border-t-4 border-white"></span>
-            <span className="absolute -top-2 -right-2 w-4 h-4 border-r-4 border-t-4 border-white"></span>
-            <span className="absolute -bottom-2 -left-2 w-4 h-4 border-l-4 border-b-4 border-white"></span>
-            <span className="absolute -bottom-2 -right-2 w-4 h-4 border-r-4 border-b-4 border-white"></span>
-            {isMenuOpen ? "✕" : "☰"}
-          </button>
+            {isMenuOpen ? "\u2715" : "\u2630"}
+          </NavButton>
 
           {/* Desktop navigation items on the right */}
           <div className="hidden lg:flex items-center gap-4 xl:gap-6">
             {navItems.slice(1).map((item, index) => (
-              <Link
-                key={index}
-                to={item.href}
-                className="relative px-6 py-3 xl:px-12 xl:py-5 bg-gray-200 border-[2px] border-black text-gray-900 font-pixel text-base xl:text-xl tracking-wide hover:bg-gray-300 transition-colors whitespace-nowrap"
-              >
-                {/* Top-left corner */}
-                <span className="absolute -top-2 -left-2 w-4 h-4 border-l-4 border-t-4 border-white"></span>
-                {/* Top-right corner */}
-                <span className="absolute -top-2 -right-2 w-4 h-4 border-r-4 border-t-4 border-white"></span>
-                {/* Bottom-left corner */}
-                <span className="absolute -bottom-2 -left-2 w-4 h-4 border-l-4 border-b-4 border-white"></span>
-                {/* Bottom-right corner */}
-                <span className="absolute -bottom-2 -right-2 w-4 h-4 border-r-4 border-b-4 border-white"></span>
-
-                {item.label}
+              <Link key={index} to={item.href}>
+                <NavButton className="text-base xl:text-xl xl:px-12 xl:py-5 tracking-wide whitespace-nowrap">
+                  {item.label}
+                </NavButton>
               </Link>
             ))}
           </div>
@@ -76,13 +56,10 @@ export default function Navbar() {
                 key={index}
                 to={item.href}
                 onClick={() => setIsMenuOpen(false)}
-                className="relative px-6 py-3 bg-gray-200 border-[2px] border-black text-gray-900 font-pixel text-sm tracking-wide hover:bg-gray-300 transition-colors text-center"
               >
-                <span className="absolute -top-2 -left-2 w-4 h-4 border-l-4 border-t-4 border-white"></span>
-                <span className="absolute -top-2 -right-2 w-4 h-4 border-r-4 border-t-4 border-white"></span>
-                <span className="absolute -bottom-2 -left-2 w-4 h-4 border-l-4 border-b-4 border-white"></span>
-                <span className="absolute -bottom-2 -right-2 w-4 h-4 border-r-4 border-b-4 border-white"></span>
-                {item.label}
+                <NavButton className="w-full text-sm tracking-wide text-center">
+                  {item.label}
+                </NavButton>
               </Link>
             ))}
           </div>

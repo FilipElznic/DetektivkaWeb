@@ -3,9 +3,14 @@ import { Link } from "react-router-dom";
 function Footer() {
   return (
     <footer className="min-h-[35vh] flex flex-col items-center text-white gap-3 md:gap-5 relative bg-gradient-to-b from-black to-zinc-700 px-4 py-6">
-      <div className="absolute bottom-5 left-4 md:left-10 bg-white">
+      <a
+        href="https://spsul.cz"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="absolute bottom-5 left-4 md:left-10 bg-white"
+      >
         <img src="/logo.png" alt="Logo" className="w-10 h-10 md:w-16 md:h-16" />
-      </div>
+      </a>
       <div className="absolute bottom-5 right-4 md:right-10 text-white text-xs md:text-base">
         <p>Design by Filip Elznic</p>
       </div>

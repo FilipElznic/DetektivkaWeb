@@ -23,13 +23,62 @@ function App() {
           <Routes>
             {/* Home / Landing page */}
             <Route path="/" element={<Home />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/vyvoj" element={<Vyvoj />} />
-            <Route path="/onas" element={<ONas />} />
-            <Route path="/github" element={<Github />} />
-            <Route path="/cookies" element={<Cookies />} />
-            <Route path="/podminky" element={<Podminky />} />
-            <Route path="/ochrana-udaju" element={<OchranaUdaju />} />
+            <Route
+              path="/blog"
+              element={
+                <div className="page-transition">
+                  <Blog />
+                </div>
+              }
+            />
+            <Route
+              path="/vyvoj"
+              element={
+                <div className="page-transition">
+                  <Vyvoj />
+                </div>
+              }
+            />
+            <Route
+              path="/onas"
+              element={
+                <div className="page-transition">
+                  <ONas />
+                </div>
+              }
+            />
+            <Route
+              path="/github"
+              element={
+                <div className="page-transition">
+                  <Github />
+                </div>
+              }
+            />
+            <Route
+              path="/cookies"
+              element={
+                <div className="page-transition">
+                  <Cookies />
+                </div>
+              }
+            />
+            <Route
+              path="/podminky"
+              element={
+                <div className="page-transition">
+                  <Podminky />
+                </div>
+              }
+            />
+            <Route
+              path="/ochrana-udaju"
+              element={
+                <div className="page-transition">
+                  <OchranaUdaju />
+                </div>
+              }
+            />
           </Routes>
         </main>
         <Footer />

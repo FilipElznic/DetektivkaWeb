@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 export default function Blog() {
   return (
     <div className="bg-black min-h-screen flex flex-col pt-24">

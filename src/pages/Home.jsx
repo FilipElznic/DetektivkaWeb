@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className="bg-black relative">
       <div
-        className="fixed inset-0 z-0"
+        className="fixed inset-0 z-0 "
         style={{
           backgroundImage: 'url("/bg.webp")',
           backgroundSize: "cover",
