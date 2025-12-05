@@ -53,13 +53,15 @@ export default function ONas() {
 
           {/* Team Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 lg:gap-16 max-w-7xl mx-auto">
-            {teamMembers.map((item) => (
+            {teamMembers.map((item, index) => (
               <div key={item.id} className="flex flex-col items-center">
                 <PixelatedFrame size="large">
                   <img
                     src={item.image}
                     alt={item.alt}
                     className="w-[95%] h-[95%] object-contain p-3 md:p-5 bg-zinc-400"
+                    fetchPriority={index === 0 ? "high" : "auto"}
+                    loading={index === 0 ? "eager" : "lazy"}
                   />
                 </PixelatedFrame>
                 <p className="text-lg md:text-xl lg:text-2xl font-pixel text-white mt-4">
