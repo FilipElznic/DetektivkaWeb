@@ -4,37 +4,37 @@ export default function ONas() {
   const teamMembers = [
     {
       id: 1,
-      image: "/image0.png",
+      image: "/vyvoj.png",
       alt: "Člen týmu 1",
-      name: "John Doe",
+      name: "Simiceek",
     },
     {
       id: 2,
-      image: "/image1.png",
+      image: "/vyvoj.png",
       alt: "Člen týmu 2",
-      name: "Jane Smith",
+      name: "lolkoment",
     },
     {
       id: 3,
-      image: "/image2.png",
+      image: "/vyvoj.png",
       alt: "Člen týmu 3",
-      name: "Mike Johnson",
+      name: "Else if",
     },
     {
       id: 4,
-      image: "/image0.png",
+      image: "/vyvoj.png",
       alt: "Člen týmu 4",
-      name: "Sarah Williams",
+      name: "qu35tt",
     },
     {
       id: 5,
-      image: "/image1.png",
+      image: "/vyvoj.png",
       alt: "Člen týmu 5",
       name: "Tom Brown",
     },
     {
       id: 6,
-      image: "/image2.png",
+      image: "/vyvoj.png",
       alt: "Člen týmu 6",
       name: "Lisa Davis",
     },
@@ -54,7 +54,7 @@ export default function ONas() {
           {/* Team Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 lg:gap-16 max-w-7xl mx-auto">
             {teamMembers.map((item) => (
-              <div key={item.id} className="flex justify-center">
+              <div key={item.id} className="flex flex-col items-center">
                 <PixelatedFrame size="large">
                   <img
                     src={item.image}
@@ -62,6 +62,9 @@ export default function ONas() {
                     className="w-[95%] h-[95%] object-contain p-3 md:p-5 bg-zinc-400"
                   />
                 </PixelatedFrame>
+                <p className="text-lg md:text-xl lg:text-2xl font-pixel text-white mt-4">
+                  {item.name}
+                </p>
               </div>
             ))}
           </div>

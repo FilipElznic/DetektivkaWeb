@@ -13,8 +13,11 @@ function LandingPage() {
   }, []);
 
   return (
-    <div className="min-h-screen relative overflow-hidden">
-      <div className="min-h-screen bg-black bg-opacity-50">
+    <div className="sm:min-h-screen relative overflow-hidden">
+      <div
+        className="h-[80vh] flex items-center justify-center
+      sm:min-h-screen bg-black bg-opacity-50"
+      >
         <div
           className="container mx-auto px-4 py-20 md:py-44 text-white transition-all  duration-300"
           style={{
@@ -31,7 +34,7 @@ function LandingPage() {
           </p>
           <a
             href="/github"
-            className="inline-block px-6 py-3 md:px-8 md:py-4 bg-gray-200 border-[2px] border-black text-gray-900 font-pixel text-base md:text-xl tracking-wide hover:bg-gray-300 transition-all duration-300 hover:scale-105 animate-fade-in-delay-2"
+            className="inline-block  px-6 py-3 md:px-8 md:py-4 bg-gray-200 border-[2px] border-black text-gray-900 font-pixel text-base md:text-xl tracking-wide hover:bg-gray-300 transition-all duration-300 hover:scale-105 animate-fade-in-delay-2"
           >
             Otevřít dveře do hry
           </a>

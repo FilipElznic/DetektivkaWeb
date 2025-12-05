@@ -19,7 +19,7 @@ function Explore() {
         </p>
         <a
           href="/github"
-          className="relative px-8 py-4 md:px-12 md:py-5 mt-6 md:mt-9 bg-gray-200 border-[2px] border-black text-gray-900 font-pixel text-base md:text-xl tracking-wide hover:bg-gray-300 transition-colors w-48 md:w-56 text-center
+          className="relative px-8 py-4 md:px-12 md:py-5 mt-6 md:mt-9 bg-gray-200 border-[2px] border-black text-gray-900 font-pixel text-base md:text-xl tracking-wide hover:bg-gray-300 transition-colors w-48 md:w-64 rounded-lg text-center
         "
         >
           {/* Top-left corner */}
