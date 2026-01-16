@@ -12,7 +12,7 @@ function Mission() {
       </p>
       <div className="h-[50vh] md:h-[70vh] bg-transparent w-full flex items-center justify-center">
         <img
-          src="/image03.png"
+          src="/detektiv.webp"
           alt="mission"
           className="h-full object-contain"
         />

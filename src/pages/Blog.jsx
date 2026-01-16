@@ -44,6 +44,16 @@ export default function Blog() {
             "UI/UX: Finalizace designu ostatních stránek webu a ladění základních komponent.",
           ]}
         />
+
+        <BlogContent
+          title="16.1. - Puzzle, Modely a Integrace"
+          points={[
+            "Skriptování: Tvorba a ladění chování skriptů pro jednotlivé interaktivní objekty.",
+            "Puzzle System: Implementace kompletního systému hádanek a logických úloh.",
+            "Visuals: Import finálních modelů a jejich zasazení do herního prostředí.",
+            "Integrace: Spojování všech částí hry dohromady a finální kompletace buildů.",
+          ]}
+        />
       </div>
     </div>
   );

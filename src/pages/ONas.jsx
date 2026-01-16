@@ -30,7 +30,7 @@ export default function ONas() {
       id: 5,
       image: "/vyvoj.png",
       alt: "Člen týmu 5",
-      name: "Tom Brown",
+      name: "Mangoucz",
     },
     {
       id: 6,
