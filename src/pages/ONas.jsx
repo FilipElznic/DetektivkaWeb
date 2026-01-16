@@ -32,12 +32,6 @@ export default function ONas() {
       alt: "Člen týmu 5",
       name: "Mangoucz",
     },
-    {
-      id: 6,
-      image: "/vyvoj.png",
-      alt: "Člen týmu 6",
-      name: "Lisa Davis",
-    },
   ];
 
   return (
