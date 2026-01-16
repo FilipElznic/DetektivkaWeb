@@ -4,18 +4,18 @@ export default function PixelatedBoxes() {
   const items = [
     {
       id: 1,
-      image: "/image0.png",
-      alt: "Pearl Crown",
+      image: "/Telefon.webp",
+      alt: "telefon",
     },
     {
       id: 2,
-      image: "/image1.png",
-      alt: "Sapphire Bracelet",
+      image: "/VybaveniNaDukazy.webp",
+      alt: "vybaveni na dukazy",
     },
     {
       id: 3,
-      image: "/image2.png",
-      alt: "Royal Tiara",
+      image: "/Odznak.webp",
+      alt: "odznak",
     },
   ];
 

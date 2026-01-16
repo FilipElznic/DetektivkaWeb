@@ -7,9 +7,6 @@ export default function Blog() {
           <h1 className="text-4xl md:text-6xl lg:text-8xl font-pixel mb-6 text-center">
             Blog
           </h1>
-          <p className="text-base md:text-xl lg:text-2xl font-pixel text-center text-gray-300 w-1/2 mx-auto mb-12">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </p>
         </div>
       </div>
 

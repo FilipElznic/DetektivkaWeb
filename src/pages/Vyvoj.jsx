@@ -53,11 +53,19 @@ export default function Vyvoj() {
           />
         </div>
         <div className="flex flex-wrap justify-center gap-6 md:gap-10">
-          <TechCard name="Unity Engine" icon="🎮" />
-          <TechCard name="Aseprite" icon="🎨" />
-          <TechCard name="FMOD Studio" icon="🎵" />
-          <TechCard name="Blender" icon="🧊" />
-          <TechCard name="Visual Studio" icon="💻" />
+          <TechCard name="Unity Engine" icon="🎮" link="https://unity.com/" />
+          <TechCard
+            name="Aseprite"
+            icon="🎨"
+            link="https://www.aseprite.org/"
+          />
+          <TechCard name="FMOD Studio" icon="🎵" link="https://www.fmod.com/" />
+          <TechCard name="Blender" icon="🧊" link="https://www.blender.org/" />
+          <TechCard
+            name="Visual Studio"
+            icon="💻"
+            link="https://visualstudio.microsoft.com/"
+          />
         </div>
       </div>
     </div>
@@ -138,8 +146,13 @@ const TimelineItem = ({ phase, title, date, description, align }) => {
   );
 };
 
-const TechCard = ({ name, icon }) => (
-  <div className="w-32 h-32 md:w-40 md:h-40 border-2 border-white bg-black flex flex-col items-center justify-center gap-2 hover:bg-zinc-900 transition-colors cursor-pointer relative group">
+const TechCard = ({ name, icon, link }) => (
+  <a
+    href={link}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-32 h-32 md:w-40 md:h-40 border-2 border-white bg-black flex flex-col items-center justify-center gap-2 hover:bg-zinc-900 transition-colors cursor-pointer relative group"
+  >
     <div className="absolute top-1 left-1 w-1 h-1 bg-white"></div>
     <div className="absolute top-1 right-1 w-1 h-1 bg-white"></div>
     <div className="absolute bottom-1 left-1 w-1 h-1 bg-white"></div>
@@ -148,5 +161,5 @@ const TechCard = ({ name, icon }) => (
       {icon}
     </span>
     <span className="font-pixel text-white text-sm md:text-base">{name}</span>
-  </div>
+  </a>
 );
