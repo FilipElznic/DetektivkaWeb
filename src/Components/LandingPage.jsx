@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 function LandingPage() {
   const [scrollY, setScrollY] = useState(0);
@@ -32,12 +33,12 @@ function LandingPage() {
             Tajemná detektivní hra plná záhad a dobrodružství. Vydejte se na
             cestu plnou nečekaných zvratů a odhalte pravdu.
           </p>
-          <a
-            href="/github"
+          <Link
+            to="/github"
             className="inline-block  px-6 py-3 md:px-8 md:py-4 bg-gray-200 border-[2px] border-black text-gray-900 font-pixel text-base md:text-xl tracking-wide hover:bg-gray-300 transition-all duration-300 hover:scale-105 animate-fade-in-delay-2"
           >
             Otevřít dveře do hry
-          </a>
+          </Link>
         </div>
       </div>
     </div>
