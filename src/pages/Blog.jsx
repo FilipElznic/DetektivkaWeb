@@ -51,6 +51,35 @@ export default function Blog() {
             "Integrace: Spojování všech částí hry dohromady a finální kompletace buildů.",
           ]}
         />
+        <BlogContent
+          title="30.1. - Přechod do 3D a důkazní materiály"
+          points={[
+            "Prostředí: Proběhlo kompletní převedení projektu z 2D do 3D.",
+            "Evidence: Připravili jsme klíčové důkazy pro vyšetřování, jako jsou Záznamy kamer, Plánek Louvru a Složka s důkazy.",
+            "Inventář: Vytvořili jsme a naimportovali sprity itemů přímo do inventáře.",
+            "Předměty doličné: Zpracování specifických stop, např. Ukradený obraz, Stopa bot a Vzorek parfému.",
+          ]}
+        />
+
+        <BlogContent
+          title="13.2. - Vybavení detektiva a další assety"
+          points={[
+            "Nástroje: Práce na vybavení na evidenci – Kufřík na otisky, Mikroskop, Rukavice a Pásmo.",
+            "Osobní věci: Implementace a příprava osobních předmětů jako Odznak, Telefon a Zápisník.",
+            "Interaktivní objekty: Dokončování skriptů pro další objekty ve hře, včetně Tabule s fixami.",
+            "Systémy: Doladění dialogů mezi postavami a implementace dalších konverzací přímo do hry.",
+          ]}
+        />
+
+        <BlogContent
+          title="5.3. - Optimalizace webu, Animace a SEO"
+          points={[
+            "Web Design & UX: Přidali jsme animace na web, dodělali typografii a zajistili plnou responzivitu pro telefony.",
+            "Výkon webu: Lighthouse optimalizace, routing stránky a celková optimalizace rychlosti.",
+            "Grafika webu: Sjednocení vizuálního stylu obrázků, jejich zmenšení pro rychlejší načítání a finální úpravy na webu.",
+            "Dokončovací práce: Kompletní testování webové stránky, nastavení SEO a dodělání status reportu.",
+          ]}
+        />
       </div>
     </div>
   );
